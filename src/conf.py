@@ -5,11 +5,7 @@ needs_sphinx = '1.1'
 # They can be extensions coming with Sphinx (named 'sphinx.ext.*')
 # or your custom ones.
 extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.coverage',
     'sphinx.ext.mathjax',
-    'sphinx.ext.todo',
-    'sphinx.ext.viewcode'
 ]
 
 todo_include_todos = True
@@ -28,8 +24,8 @@ source_encoding = 'utf-8'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Effective Programming Practices for Economists'
-copyright = '2010-2013, Hans-Martin von Gaudecker'
+project = 'Guide for Setting up a Python Environment for Economic Research'
+copyright = '2010-2014, Hans-Martin von Gaudecker'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -91,7 +87,7 @@ html_theme = 'pyramid'
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = 'Installation Guide'
+html_title = 'Guide for Setting up a Python Environment for Economic Research'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 # html_short_title = None
@@ -108,7 +104,7 @@ html_title = 'Installation Guide'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-# html_static_path = ['_static']
+#html_static_path = ['_static']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
@@ -176,7 +172,7 @@ latex_elements = {
 latex_documents = [(
     'index',
     'installation_guide.tex',
-    'Installation guide for Python \& Co.',
+    'Guide for Setting up a Python Environment for Economic Research',
     'Hans-Martin von Gaudecker',
     'howto'
 )]
@@ -212,7 +208,7 @@ latex_documents = [(
 man_pages = [(
     'index',
     'installation_guide',
-    'Installation guide for the "Effective Programming Practices for Economists" course',
+    'Guide for Setting up a Python Environment for Economic Research',
     'Hans-Martin von Gaudecker',
     1
 )]

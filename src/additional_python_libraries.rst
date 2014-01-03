@@ -11,7 +11,8 @@ Now we can easily install more libraries. Type::
 
 One more::
 
-    pip install coverage
+    conda install -n py33 coverage
+    conda install -n py33 sphinxcontrib-bibtex
 
 
 .. raw:: latex

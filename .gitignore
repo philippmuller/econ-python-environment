@@ -1,0 +1,4 @@
+*.sublime-*
+bld
+.lock-*
+__pycache__
