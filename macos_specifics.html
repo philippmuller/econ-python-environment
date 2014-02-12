@@ -68,13 +68,13 @@
             
   <div class="section" id="macos-specifics-adjust-slightly-for-linux">
 <span id="macos-specifics"></span><h1>MacOS specifics (adjust slightly for Linux)<a class="headerlink" href="#macos-specifics-adjust-slightly-for-linux" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="opening-a-terminal-on-macos">
-<span id="macos-terminal"></span><h2>Opening a Terminal on MacOS<a class="headerlink" href="#opening-a-terminal-on-macos" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="opening-a-terminal">
+<span id="macos-terminal"></span><h2>Opening a Terminal<a class="headerlink" href="#opening-a-terminal" title="Permalink to this headline">¶</a></h2>
 <p>Open the program <strong>Terminal</strong> in the &#8220;Utilities&#8221; subfolder of your applications folder.</p>
 <p>If you have never used the command line before, check <a class="reference external" href="http://www.hacktheday.com/beginners-guide-to-apple-terminal-part-1/">this page</a> for moving between directories, working with files, etc.. <a class="reference external" href="http://software-carpentry.org/4_0/shell/">This lecture</a> of the <a class="reference external" href="http://software-carpentry.org/4_0/">Software Carpentry course</a> goes into more detail.</p>
 </div>
-<div class="section" id="making-the-path-settings-permanent-on-macos">
-<span id="path-macos-permanent"></span><h2>Making the PATH settings permanent on MacOS<a class="headerlink" href="#making-the-path-settings-permanent-on-macos" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="making-the-path-settings-permanent">
+<span id="macos-path-permanent"></span><h2>Making the PATH settings permanent<a class="headerlink" href="#making-the-path-settings-permanent" title="Permalink to this headline">¶</a></h2>
 <p>You will need to add a line to the file <tt class="docutils literal"><span class="pre">.bash_profile</span></tt> and potentially create the file. This file lives in your home directory and it is hidden from your view by default, to toggle that setting that you can download a neat little <a class="reference external" href="http://download.cnet.com/Show-Hidden-Files/3000-2383_4-75415396.html">program</a>.</p>
 <p><strong>Linux users</strong>: For most distributions, everything here applies to the file <tt class="docutils literal"><span class="pre">.bashrc</span></tt> instead of <tt class="docutils literal"><span class="pre">.bash_profile</span></tt>.</p>
 <p>I will now provide a step-by-step guide of how to create / adjust this file using a tiny editor called <tt class="docutils literal"><span class="pre">nano</span></tt>, if you are familiar with editing text files, just use your editor of choice.</p>
@@ -105,18 +105,17 @@
 <p>Check the version number &#8211; it should be 3.3, nothing else.</p>
 </li>
 </ol>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p>If you have Stata (Matlab, R, ...) installed and intend to use it in your research, you may as well append the path pointing to the respective executable to your path.</p>
-<p>Example for Stata:</p>
+</div>
+<div class="section" id="adding-additional-programs-to-your-path">
+<span id="macos-path-additional-programs"></span><h2>Adding additional programs to your path<a class="headerlink" href="#adding-additional-programs-to-your-path" title="Permalink to this headline">¶</a></h2>
+<p>If you plan on using the project template with programs other than Python (Stata, Matlab, R, ...), you will need to add the respective executables to your path as well. Otherwise Waf will not be able to find these programs.</p>
+<p>You will need to follow the same steps as before. Example for Stata:</p>
 <div class="highlight-python"><pre># Stata directory
 PATH=&quot;${PATH}:/Applications/Stata/StataMP.app/Contents/MacOS/&quot;
 # Finish
 export PATH</pre>
 </div>
-<p>In the <tt class="docutils literal"><span class="pre">path/to/Stata/</span></tt> you may need to replace bits and pieces as appropriate for your installation (e.g. you might not have StataMP but StataSE).</p>
-<p class="last">Same for Matlab / R / whatever.</p>
-</div>
+<p>In the <tt class="docutils literal"><span class="pre">path/to/Stata/</span></tt> you may need to replace bits and pieces as appropriate for your installation (e.g. you might not have StataMP but StataSE). Similarly for Matlab / R / etc..</p>
 </div>
 </div>
 
@@ -129,8 +128,9 @@ export PATH</pre>
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">MacOS specifics (adjust slightly for Linux)</a><ul>
-<li><a class="reference internal" href="#opening-a-terminal-on-macos">Opening a Terminal on MacOS</a></li>
-<li><a class="reference internal" href="#making-the-path-settings-permanent-on-macos">Making the PATH settings permanent on MacOS</a></li>
+<li><a class="reference internal" href="#opening-a-terminal">Opening a Terminal</a></li>
+<li><a class="reference internal" href="#making-the-path-settings-permanent">Making the PATH settings permanent</a></li>
+<li><a class="reference internal" href="#adding-additional-programs-to-your-path">Adding additional programs to your path</a></li>
 </ul>
 </li>
 </ul>

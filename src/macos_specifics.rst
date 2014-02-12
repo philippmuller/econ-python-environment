@@ -1,23 +1,23 @@
 .. _macos_specifics:
 
+*******************************************
 MacOS specifics (adjust slightly for Linux)
-============================================
+*******************************************
 
 .. _macos_terminal:
 
-Opening a Terminal on MacOS
-______________________________________
+Opening a Terminal
+==================
 
 Open the program **Terminal** in the "Utilities" subfolder of your applications folder.
 
 If you have never used the command line before, check `this page <http://www.hacktheday.com/beginners-guide-to-apple-terminal-part-1/>`_ for moving between directories, working with files, etc.. `This lecture <http://software-carpentry.org/4_0/shell/>`_ of the `Software Carpentry course <http://software-carpentry.org/4_0/>`_ goes into more detail. 
 
 
+.. _macos_path_permanent:
 
-.. _path_macos_permanent:
-
-Making the PATH settings permanent on MacOS
-_________________________________________________
+Making the PATH settings permanent
+==================================
 
 You will need to add a line to the file ``.bash_profile`` and potentially create the file. This file lives in your home directory and it is hidden from your view by default, to toggle that setting that you can download a neat little `program <http://download.cnet.com/Show-Hidden-Files/3000-2383_4-75415396.html>`_.
 
@@ -57,19 +57,19 @@ I will now provide a step-by-step guide of how to create / adjust this file usin
 
    Check the version number -- it should be 3.3, nothing else.
 
-.. note::
 
-    If you have Stata (Matlab, R, ...) installed and intend to use it in your research, you may as well append the path pointing to the respective executable to your path.
+.. _macos_path_additional_programs:
 
-    Example for Stata::
+Adding additional programs to your path
+========================================
 
-        # Stata directory
-        PATH="${PATH}:/Applications/Stata/StataMP.app/Contents/MacOS/"
-        # Finish
-        export PATH
+If you plan on using the project template with programs other than Python (Stata, Matlab, R, ...), you will need to add the respective executables to your path as well. Otherwise Waf will not be able to find these programs.
 
-    In the ``path/to/Stata/`` you may need to replace bits and pieces as appropriate for your installation (e.g. you might not have StataMP but StataSE).
+You will need to follow the same steps as before. Example for Stata::
 
-    Same for Matlab / R / whatever.
+    # Stata directory
+    PATH="${PATH}:/Applications/Stata/StataMP.app/Contents/MacOS/"
+    # Finish
+    export PATH
 
-
+In the ``path/to/Stata/`` you may need to replace bits and pieces as appropriate for your installation (e.g. you might not have StataMP but StataSE). Similarly for Matlab / R / etc..

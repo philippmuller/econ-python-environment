@@ -8,7 +8,7 @@ extensions = [
     'sphinx.ext.mathjax',
 ]
 
-todo_include_todos = True
+todo_include_todos = False
 
 
 # Add any paths that contain templates here, relative to this directory.

@@ -69,7 +69,7 @@
   <div class="section" id="windows-specifics">
 <span id="id1"></span><h1>Windows specifics<a class="headerlink" href="#windows-specifics" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="opening-a-shell-on-windows">
-<span id="windows-shell"></span><h2>Opening a shell on Windows<a class="headerlink" href="#opening-a-shell-on-windows" title="Permalink to this headline">¶</a></h2>
+<span id="win-shell"></span><h2>Opening a shell on Windows<a class="headerlink" href="#opening-a-shell-on-windows" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">On <strong>Windows XP</strong>: Click on <cite>Start</cite>, select <cite>run</cite>, type <tt class="docutils literal"><span class="pre">cmd</span></tt>.</p>
 </li>
@@ -80,8 +80,7 @@
 <p>If you have never used the command line before, check <a class="reference external" href="http://www.bleepingcomputer.com/tutorials/tutorial76.html">this page</a> for moving between directories, working with files, etc.</p>
 </div>
 <div class="section" id="making-the-path-settings-permanent-on-windows">
-<span id="path-win-permanent"></span><h2>Making the PATH settings permanent on Windows<a class="headerlink" href="#making-the-path-settings-permanent-on-windows" title="Permalink to this headline">¶</a></h2>
-<p>(Thanks to Thomas Behles for providing the basis for this script)</p>
+<span id="win-path-permanent"></span><h2>Making the PATH settings permanent on Windows<a class="headerlink" href="#making-the-path-settings-permanent-on-windows" title="Permalink to this headline">¶</a></h2>
 <p>You will need local administration rights for this again.</p>
 <ul>
 <li><p class="first">Right-click on Computer. Then go to &#8220;Properties&#8221; and select the tab &#8220;Advanced System settings&#8221;. Choose &#8220;Environment Variables&#8221; and select &#8220;Path&#8221; from the list of system variables.</p>
@@ -106,12 +105,11 @@ object?   -&gt; Details about &#x27;object&#x27;, use &#x27;object??&#x27; for e
 </li>
 </ul>
 <p>If IPython launches, it worked &#8211; make sure to check the version number, should be 3.3 and not 2.7.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p>If you have Stata (Matlab, R, ...) installed and intend to use it in your research, you may as well append the path pointing to the respective executable to your path.</p>
-<p>Example for Stata: Just append <tt class="docutils literal"><span class="pre">;C:\Path\to\Stata.exe</span></tt> to the path in the same fashion now (e.g. if your Stata executable is <tt class="docutils literal"><span class="pre">C:\Programme\Stata13\WSESTATA.EXE</span></tt>, you should add <tt class="docutils literal"><span class="pre">;C:\Programme\Stata13</span></tt> to your path).</p>
-<p class="last">Same for Matlab / R / whatever.</p>
 </div>
+<div class="section" id="adding-additional-programs-to-your-path">
+<span id="win-path-additional-programs"></span><h2>Adding additional programs to your path<a class="headerlink" href="#adding-additional-programs-to-your-path" title="Permalink to this headline">¶</a></h2>
+<p>If you plan on using the project template with programs other than Python (Stata, Matlab, R, ...), you will need to add the respective executables to your path as well. Otherwise Waf will not be able to find these programs.</p>
+<p>You will need to follow the same steps as before. Example for Stata: Append <tt class="docutils literal"><span class="pre">;C:\Path\to\Stata.exe</span></tt> to the path in the same fashion now (e.g. if your Stata executable is <tt class="docutils literal"><span class="pre">C:\Programme\Stata13\WSESTATA.EXE</span></tt>, you should add <tt class="docutils literal"><span class="pre">;C:\Programme\Stata13</span></tt> to your path). Similarly for Matlab / R / etc..</p>
 </div>
 </div>
 
@@ -126,6 +124,7 @@ object?   -&gt; Details about &#x27;object&#x27;, use &#x27;object??&#x27; for e
 <li><a class="reference internal" href="#">Windows specifics</a><ul>
 <li><a class="reference internal" href="#opening-a-shell-on-windows">Opening a shell on Windows</a></li>
 <li><a class="reference internal" href="#making-the-path-settings-permanent-on-windows">Making the PATH settings permanent on Windows</a></li>
+<li><a class="reference internal" href="#adding-additional-programs-to-your-path">Adding additional programs to your path</a></li>
 </ul>
 </li>
 </ul>

@@ -1,13 +1,13 @@
 .. _windows_specifics:
 
+*****************
 Windows specifics
-==================
+*****************
 
-.. _windows_shell:
+.. _win_shell:
 
 Opening a shell on Windows
-______________________________________
-
+==========================
 
 #. On **Windows XP**: Click on `Start`, select `run`, type ``cmd``. 
 #. On later versions: Click on `Start`, type ``cmd`` in the search field.
@@ -17,12 +17,10 @@ ______________________________________
 If you have never used the command line before, check `this page <http://www.bleepingcomputer.com/tutorials/tutorial76.html>`_ for moving between directories, working with files, etc.
 
 
-.. _path_win_permanent:
+.. _win_path_permanent:
 
 Making the PATH settings permanent on Windows
-_________________________________________________
-
-(Thanks to Thomas Behles for providing the basis for this script)
+=============================================
 
 You will need local administration rights for this again.
 
@@ -46,12 +44,13 @@ You will need local administration rights for this again.
 
 If IPython launches, it worked -- make sure to check the version number, should be 3.3 and not 2.7.
 
-.. note::
-    
-    If you have Stata (Matlab, R, ...) installed and intend to use it in your research, you may as well append the path pointing to the respective executable to your path.
 
-    Example for Stata: Just append ``;C:\Path\to\Stata.exe`` to the path in the same fashion now (e.g. if your Stata executable is ``C:\Programme\Stata13\WSESTATA.EXE``, you should add ``;C:\Programme\Stata13`` to your path).
+.. _win_path_additional_programs:
 
-    Same for Matlab / R / whatever.
+Adding additional programs to your path
+=======================================
 
+If you plan on using the project template with programs other than Python (Stata, Matlab, R, ...), you will need to add the respective executables to your path as well. Otherwise Waf will not be able to find these programs.
+
+You will need to follow the same steps as before. Example for Stata: Append ``;C:\Path\to\Stata.exe`` to the path in the same fashion now (e.g. if your Stata executable is ``C:\Programme\Stata13\WSESTATA.EXE``, you should add ``;C:\Programme\Stata13`` to your path). Similarly for Matlab / R / etc..
 
