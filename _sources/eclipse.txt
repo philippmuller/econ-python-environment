@@ -6,18 +6,18 @@ Eclipse
 Download and installation
 ___________________________
 
-Eclipse is written in Java and requires that a Java Runtime Environment (JRE) be installed on your machine to run. If you have any trouble running Eclipse, there might not be an appropriate JRE installed on your machine. You can download one from this `page <http://www.oracle.com/technetwork/java/javase/downloads/index.html>`_. Look for "Download JRE" and follow all necessary steps. If you install a JRE, make sure to remember its architecture (32bit/64bit) and pick the corresponding Eclipse version below.
+Eclipse is written in Java and requires that a Java Runtime Environment (JRE) be installed on your machine to run. For our purposes, we **require version 7**. If you have any trouble running Eclipse, there might not be an appropriate JRE installed on your machine (e.g., Apple only ships version 6, regardless of the version of MacOS X). You can download one from this `page <http://www.oracle.com/technetwork/java/javase/downloads/index.html>`_. Look for "Download JRE" and follow all necessary steps. If you install a JRE, make sure to remember its architecture (32bit/64bit) and pick the corresponding Eclipse version below.
 
-.. note::
-
-    In recent versions of MacOS, you need to work a bit harder. First you need the Java Development Kit from `here <http://www.oracle.com/technetwork/java/javase/downloads/index.html>`_. 
-
-    After downloading Eclipse and copying it to your Applications folder, open ``/Applications/eclipse/Eclipse.app/Contents/MacOS/eclipse.ini`` and look for the line starting with ``-Dosgi.requiredJavaVersion``. Replace that line with the following three lines::
-
-        -vm
-        /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/bin/java
-        -vmargs
-        -Dosgi.requiredJavaVersion=1.7
+.. .. note::
+.. 
+..     In recent versions of MacOS, you need to work a bit harder. First you need the Java Development Kit (Java Platform JDK) from `here <http://www.oracle.com/technetwork/java/javase/downloads/index.html>`_. 
+.. 
+..     After downloading Eclipse and copying it to your Applications folder, open ``/Applications/eclipse/Eclipse.app/Contents/MacOS/eclipse.ini`` and look for the line starting with ``-Dosgi.requiredJavaVersion``. Replace that line with the following three lines::
+.. 
+..         -vm
+..         /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/bin/java
+..         -vmargs
+..         -Dosgi.requiredJavaVersion=1.7
 
 
 For installing Eclipse, go to the `download section <http://www.eclipse.org/downloads/>`_ of the `Eclipse homepage <http://www.eclipse.org/>`_ and get the version for C/C++ developers for your system (if you're into Fortran / high performance computing, you may also get the parallel applications version). Unpack it, move the entire folder to ``C:\`` (on the Mac: the Applications folder), and make a shortcut to the application eclipse that you find in the folder on your desktop (or wherever you like).
