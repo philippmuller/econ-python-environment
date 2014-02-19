@@ -80,27 +80,30 @@
 <p>I will now provide a step-by-step guide of how to create / adjust this file using a tiny editor called <tt class="docutils literal"><span class="pre">nano</span></tt>, if you are familiar with editing text files, just use your editor of choice.</p>
 <ol class="arabic">
 <li><p class="first">Open a Terminal and type:</p>
-<div class="highlight-python"><pre>nano ~/.bash_profile</pre>
+<div class="highlight-python"><div class="highlight"><pre>nano ~/.bash_profile
+</pre></div>
 </div>
 <p>You will see something like the following:</p>
 <a class="reference internal image-reference" href="_images/macos_nano.png"><img alt="_images/macos_nano.png" src="_images/macos_nano.png" style="width: 12cm;" /></a>
 <p>If <tt class="docutils literal"><span class="pre">.bash_profile</span></tt> already existed, you will see some text at this point. If so, use the arrow keys to scroll all the way to the bottom of the file.</p>
 </li>
 <li><p class="first">Paste the following line at the end of the file:</p>
-<div class="highlight-python"><pre>export PATH=&quot;${HOME}/anaconda/envs/py33/bin:${HOME}/anaconda/bin:${PATH}&quot;</pre>
+<div class="highlight-python"><div class="highlight"><pre>export PATH=&quot;${HOME}/anaconda/envs/py33/bin:${HOME}/anaconda/bin:${PATH}&quot;
+</pre></div>
 </div>
 <p>Press <tt class="docutils literal"><span class="pre">Return</span></tt> and then <tt class="docutils literal"><span class="pre">ctrl+o</span></tt> (= WriteOut = save) and <tt class="docutils literal"><span class="pre">Return</span></tt> once more.</p>
 </li>
 <li><p class="first">Now press <tt class="docutils literal"><span class="pre">Command+n</span></tt> in order to open a new Terminal window and type <tt class="docutils literal"><span class="pre">ipython</span></tt>. You should see something like:</p>
-<div class="highlight-python"><pre>xxx@xxx-desktop:~/econ$ ipython
+<div class="highlight-python"><div class="highlight"><pre>xxx@xxx-desktop:~/econ$ ipython
     Python 3.3.2 |Anaconda 1.5.1 (x86_64)| (default, Aug  5 2013, 15:07:24)
     Type &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
 
     IPython 1.1.0 -- An enhanced Interactive Python.
-    ?         -&gt; Introduction and overview of IPython&#x27;s features.
+    ?         -&gt; Introduction and overview of IPython&#39;s features.
     %quickref -&gt; Quick reference.
-    help      -&gt; Python&#x27;s own help system.
-    object?   -&gt; Details about &#x27;object&#x27;, use &#x27;object??&#x27; for extra details.</pre>
+    help      -&gt; Python&#39;s own help system.
+    object?   -&gt; Details about &#39;object&#39;, use &#39;object??&#39; for extra details.
+</pre></div>
 </div>
 <p>Check the version number &#8211; it should be 3.3, nothing else.</p>
 </li>
@@ -110,10 +113,11 @@
 <span id="macos-path-additional-programs"></span><h2>Adding additional programs to your path<a class="headerlink" href="#adding-additional-programs-to-your-path" title="Permalink to this headline">¶</a></h2>
 <p>If you plan on using the project template with programs other than Python (Stata, Matlab, R, ...), you will need to add the respective executables to your path as well. Otherwise Waf will not be able to find these programs.</p>
 <p>You will need to follow the same steps as before. Example for Stata:</p>
-<div class="highlight-python"><pre># Stata directory
+<div class="highlight-python"><div class="highlight"><pre># Stata directory
 PATH=&quot;${PATH}:/Applications/Stata/StataMP.app/Contents/MacOS/&quot;
 # Finish
-export PATH</pre>
+export PATH
+</pre></div>
 </div>
 <p>In the <tt class="docutils literal"><span class="pre">path/to/Stata/</span></tt> you may need to replace bits and pieces as appropriate for your installation (e.g. you might not have StataMP but StataSE). Similarly for Matlab / R / etc..</p>
 </div>
@@ -173,7 +177,7 @@ export PATH</pre>
 
     <div class="footer">
         &copy; Copyright 2010-2014, Hans-Martin von Gaudecker.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
     </div>
 <div class="footer">This page uses <a href="http://analytics.google.com/">
 Google Analytics</a> to collect statistics. You can disable it by blocking

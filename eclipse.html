@@ -71,6 +71,17 @@
 <div class="section" id="download-and-installation">
 <h2>Download and installation<a class="headerlink" href="#download-and-installation" title="Permalink to this headline">¶</a></h2>
 <p>Eclipse is written in Java and requires that a Java Runtime Environment (JRE) be installed on your machine to run. If you have any trouble running Eclipse, there might not be an appropriate JRE installed on your machine. You can download one from this <a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">page</a>. Look for &#8220;Download JRE&#8221; and follow all necessary steps. If you install a JRE, make sure to remember its architecture (32bit/64bit) and pick the corresponding Eclipse version below.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>In recent versions of MacOS, you need to work a bit harder. First you need the Java Development Kit from <a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">here</a>.</p>
+<p>After downloading Eclipse and copying it to your Applications folder, open <tt class="docutils literal"><span class="pre">/Applications/eclipse/Eclipse.app/Contents/MacOS/eclipse.ini</span></tt> and look for the line starting with <tt class="docutils literal"><span class="pre">-Dosgi.requiredJavaVersion</span></tt>. Replace that line with the following three lines:</p>
+<div class="last highlight-python"><div class="highlight"><pre>-vm
+/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/bin/java
+-vmargs
+-Dosgi.requiredJavaVersion=1.7
+</pre></div>
+</div>
+</div>
 <p>For installing Eclipse, go to the <a class="reference external" href="http://www.eclipse.org/downloads/">download section</a> of the <a class="reference external" href="http://www.eclipse.org/">Eclipse homepage</a> and get the version for C/C++ developers for your system (if you&#8217;re into Fortran / high performance computing, you may also get the parallel applications version). Unpack it, move the entire folder to <tt class="docutils literal"><span class="pre">C:\</span></tt> (on the Mac: the Applications folder), and make a shortcut to the application eclipse that you find in the folder on your desktop (or wherever you like).</p>
 <a class="reference internal image-reference" href="_images/eclipse_download.png"><img alt="_images/eclipse_download.png" src="_images/eclipse_download.png" style="width: 12cm;" /></a>
 <p>Start Eclipse. The first thing you need to pick is a workspace. Eclipse has a hierarchical internal structure and you will only be able to create projects in or below this directory. Try to pick or create one that does not contain any spaces &#8211; in theory it shouldn&#8217;t matter, but you never know... E.g., if you have all your projects on <tt class="docutils literal"><span class="pre">D:\</span></tt>, just pick that:</p>
@@ -142,7 +153,7 @@
 
     <div class="footer">
         &copy; Copyright 2010-2014, Hans-Martin von Gaudecker.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
     </div>
 <div class="footer">This page uses <a href="http://analytics.google.com/">
 Google Analytics</a> to collect statistics. You can disable it by blocking
