@@ -70,13 +70,40 @@
 <span id="id1"></span><h1>Additional Python libraries<a class="headerlink" href="#additional-python-libraries" title="Permalink to this headline">¶</a></h1>
 <p>Now we can easily install more libraries. Type:</p>
 <div class="highlight-python"><div class="highlight"><pre>conda install -n py33 statsmodels
+pip install -n py33 coverage
+pip install -n py33 sphinxcontrib-bibtex
 </pre></div>
 </div>
-<p><strong>Students who only follow the Microeconometrics class are done now.</strong></p>
-<p>One more:</p>
-<div class="highlight-python"><div class="highlight"><pre>conda install -n py33 coverage
-conda install -n py33 sphinxcontrib-bibtex
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p><strong>Students who only follow the Microeconometrics class are done now and should test their environment using the following steps.</strong></p>
+<p>Test whether everything installed correctly by typing in a command prompt:</p>
+<div class="highlight-python"><div class="highlight"><pre>ipython notebook
 </pre></div>
+</div>
+<p>Your default browser should fire up. If you get a <tt class="docutils literal"><span class="pre">UnicodeDecodeError</span></tt>, most likely your computer name contains special characters. Assuming you are on Windows, do the following:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Type sysdm.cpl into the start menu search box</li>
+<li>Change your computer name to pure ASCII characters</li>
+<li>Restart</li>
+</ul>
+</div></blockquote>
+<p>Click on &#8220;New notebook&#8221; and type:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>followed by &#8220;Shift + Enter&#8221;. It should say:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="s">&#39;3.3.5 |Anaconda ... &#39;</span>
+</pre></div>
+</div>
+<p>If it does not, you need to modify your path settings, moving the Python 3.3 environment first (the standard Anaconda install then comes first on your path).</p>
+<p>Then type:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">statsmodels</span> <span class="kn">as</span> <span class="nn">sm</span>
+</pre></div>
+</div>
+<p class="last">If no error occurred, you are done!</p>
 </div>
 </div>
 
