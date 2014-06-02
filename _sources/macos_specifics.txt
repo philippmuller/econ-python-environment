@@ -38,7 +38,7 @@ I will now provide a step-by-step guide of how to create / adjust this file usin
 
 #. Paste the following line at the end of the file::
 
-        export PATH="${HOME}/anaconda/envs/py33/bin:${HOME}/anaconda/bin:${PATH}"
+        export PATH="${HOME}/anaconda/bin:${PATH}"
 
    Press ``Return`` and then ``ctrl+o`` (= WriteOut = save) and ``Return`` once more.
 
@@ -46,16 +46,16 @@ I will now provide a step-by-step guide of how to create / adjust this file usin
 #. Now press ``Command+n`` in order to open a new Terminal window and type ``ipython``. You should see something like::
 
         xxx@xxx-desktop:~/econ$ ipython
-            Python 3.3.2 |Anaconda 1.5.1 (x86_64)| (default, Aug  5 2013, 15:07:24) 
-            Type "copyright", "credits" or "license" for more information.
+        Python 3.4.1 |Anaconda 2.0.0 (x86_64)| (default, May 19 2014, 13:05:46) 
+        Type "copyright", "credits" or "license" for more information.
 
-            IPython 1.1.0 -- An enhanced Interactive Python.
-            ?         -> Introduction and overview of IPython's features.
-            %quickref -> Quick reference.
-            help      -> Python's own help system.
-            object?   -> Details about 'object', use 'object??' for extra details.
+        IPython 2.1.0 -- An enhanced Interactive Python.
+        ?         -> Introduction and overview of IPython's features.
+        %quickref -> Quick reference.
+        help      -> Python's own help system.
+        object?   -> Details about 'object', use 'object??' for extra details.
 
-   Check the version number -- it should be 3.3, nothing else.
+   Check the version number -- it should be 3.4, nothing else.
 
 
 .. _macos_path_additional_programs:

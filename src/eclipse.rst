@@ -48,7 +48,7 @@ Now we need to tell Eclipse where to find the Python interpreter. In the Eclipse
 .. image:: pydev1.png
     :width: 12cm
 
-Click on `New...`, name the interpreter "Anaconda Python 3.3", and click on browse. Go to the place where you installed Anaconda, move on to the subdirectories ``envs`` and  ``py33``, select ``python.exe`` (on Windows, else it will be ``python3`` in the ``bin`` subdirectory):
+Click on `New...`, name the interpreter "Anaconda Python 3.4", and click on browse. Go to the place where you installed Anaconda, select ``python.exe`` (on Windows, else it will be ``python`` in the ``bin`` subdirectory):
 
 .. image:: pydev2.png
     :width: 12cm

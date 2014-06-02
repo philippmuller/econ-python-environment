@@ -5,9 +5,9 @@ Additional Python libraries
 
 Now we can easily install more libraries. Type::
 
-    conda install -n py33 statsmodels
-    pip install -n py33 coverage
-    pip install -n py33 sphinxcontrib-bibtex
+    conda install statsmodels
+    pip install coverage
+    pip install sphinxcontrib-bibtex
 
 .. note::
 
@@ -30,9 +30,9 @@ Now we can easily install more libraries. Type::
 
     followed by "Shift + Enter". It should say::
 
-        '3.3.5 |Anaconda ... '
+        '3.4.1 |Anaconda ... '
 
-    If it does not, you need to modify your path settings, moving the Python 3.3 environment first (the standard Anaconda install then comes first on your path).
+    If it does not, you need to modify your path settings, moving Anaconda first.
 
     Then type::
 

@@ -27,22 +27,23 @@ You will need local administration rights for this again.
 * Right-click on Computer. Then go to "Properties" and select the tab "Advanced System settings". Choose "Environment Variables" and select "Path" from the list of system variables.
 * Choose "Edit" and **prepend**:: 
     
-    C:\Anaconda\envs\py33\;C:\Anaconda\envs\py33\Scripts;
+    C:\Anaconda\;C:\Anaconda\Scripts;
 
   to the variable value -- make sure the rest remains as it is.
 * Click on ``OK`` as often as needed.
 * Test this by opening a new command prompt in a directory that is not ``C:\anaconda`` and type ``ipython``. You should see something like::
 
-    Python 3.3.2 |Anaconda 1.5.1 (x86_64)| (default, Aug  5 2013, 15:07:24) [MSC v.1500 32 bit (Intel)]
+    Python 3.4.1 |Anaconda 2.0.0 (x86_64)| (default, May 19 2014, 13:05:46) [MSC v.1500 32 bit (Intel)]
+    
     Type "copyright", "credits" or "license" for more information.
 
-    IPython 1.1.0 -- An enhanced Interactive Python.
+    IPython 2.1.0 -- An enhanced Interactive Python.
     ?         -> Introduction and overview of IPython's features.
     %quickref -> Quick reference.
     help      -> Python's own help system.
     object?   -> Details about 'object', use 'object??' for extra details.
 
-If IPython launches, it worked -- make sure to check the version number, should be 3.3 and not 2.7.
+If IPython launches, it worked -- make sure to check the version number, should be 3.4.
 
 
 .. _win_path_additional_programs:

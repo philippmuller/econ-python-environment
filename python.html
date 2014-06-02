@@ -69,23 +69,8 @@
   <div class="section" id="anaconda-python-distribution">
 <span id="python"></span><h1>Anaconda Python Distribution<a class="headerlink" href="#anaconda-python-distribution" title="Permalink to this headline">¶</a></h1>
 <p>Anaconda is a pre-packaged Python distribution for scientific users. <a class="footnote-reference" href="#id2" id="id1">[1]</a></p>
-<p>Direct your browser to <a class="reference external" href="http://continuum.io/downloads.html">http://continuum.io/downloads.html</a>; download the version for your machine. Then follow the steps described for your machine here: <a class="reference external" href="http://docs.continuum.io/anaconda/install.html">http://docs.continuum.io/anaconda/install.html</a>. You do not need to worry about setting the paths yet.</p>
-<p>By default, the Anaconda Python distribution uses Python 2.7 &#8211; we want Python 3.3. For this reason, we need to create a corresponding <em>environment</em>. In a shell (see below for opening one), go to the directory where you installed Anaconda.</p>
-<ul>
-<li><p class="first">On <strong>Windows</strong>, type:</p>
-<div class="highlight-python"><div class="highlight"><pre>cd Scripts
-conda create -n py33 python=3.3 anaconda
-</pre></div>
-</div>
-</li>
-<li><p class="first">On <strong>MacOS / Linux</strong>, type:</p>
-<div class="highlight-python"><div class="highlight"><pre>cd bin
-./conda create -n py33 python=3.3 anaconda
-</pre></div>
-</div>
-</li>
-</ul>
-<p>Accept the list of things to be installed and wait for a bit. This will install an Anaconda Python environment based on Python 3.3 to the <tt class="docutils literal"><span class="pre">envs/py33</span></tt> subdirectory of your Anaconda installation.</p>
+<p>Direct your browser to <a class="reference external" href="http://repo.continuum.io/anaconda3/">http://repo.continuum.io/anaconda3/</a>; download the version for your machine. Then follow the steps described for your machine here: <a class="reference external" href="http://docs.continuum.io/anaconda/install.html">http://docs.continuum.io/anaconda/install.html</a>. You do not need to worry about setting the paths yet.</p>
+<p>Be sure to select the link above &#8211; the default Anaconda has Python 2.7, we want Python 3.4.</p>
 <p class="rubric">Footnotes</p>
 <table class="docutils footnote" frame="void" id="id2" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
@@ -139,7 +124,7 @@ conda create -n py33 python=3.3 anaconda
 
     <div class="footer">
         &copy; Copyright 2010-2014, Hans-Martin von Gaudecker.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
     </div>
 <div class="footer">This page uses <a href="http://analytics.google.com/">
 Google Analytics</a> to collect statistics. You can disable it by blocking
